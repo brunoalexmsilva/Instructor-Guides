@@ -83,4 +83,11 @@
         - {Sunday,Monday,Tuesday,Wednesday}.log will expand to Sunday.log Monday.log Tuesday.log Wednesday.log
         - file{1..3}.txt will expand to file1.txt file2.txt file3.txt
         - file{a,b}{1,2}.txt will expand to filea1.txt filea2.txt fileb1.txt fileb2.txt
-- 
+- **VARIABLE=*value***
+    - create a variable and add it a value
+    - to get the variable value use $(VARIABLE)
+- **$(command)**
+    - command substitution 
+    - example:
+        - echo Today is $(date +%A).
+        - Today is Wednesday.
