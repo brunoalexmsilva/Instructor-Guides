@@ -91,4 +91,21 @@
     - example:
         - echo Today is $(date +%A).
         - Today is Wednesday.
-    
+        - Backslash before the variabe or command (\$HOME) will protect the variable from expanding
+        - The same happens if we use single qoutes echo ' variable $HOME'  
+
+#
+#
+# GETTING HELP IN RED HATENTERPRISE LINUX
+- There are different MAN Pages available for consulting devided in different sections.
+- ![Quadro4, MAN Sections](/images/mansections.png)
+*Quadro4: MAN Pages sections*
+- The most important ones are 1 (user commands), 5 (configuration files) and 8 (admin commands)
+- To check the available manual section of a command use **man -k *command***
+- To check a specific section use (for example section 5) **man 5 *command***
+- To navigate the man pages use the following shortcuts:
+- ![Quadro5, MAN Navigatoin](/images/mannavigation.png)
+*Quadro5: MAN Pages Navigation*
+- MAN pages are devide into diffent area with the following headings:
+- ![Quadro6, MAN Headings](/images/manheadings.png)
+*Quadro6: MAN Pages Heagings*
