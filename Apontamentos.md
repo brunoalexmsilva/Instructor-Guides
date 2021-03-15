@@ -29,7 +29,7 @@
         - !command -> executes previous "command" 
         - !23 -> executes command listes in position 23
 
- - ![Quadro1, command navigation shortcuts](/images/navigationshortcuts.png)
+ - ![Quadro1, command navigation shortcuts](/images/navigationshortcuts.png)  
  *Quadro1: Command Navigation ShortCuts*
  - **file *filename*** 
     - verify the type of file content (ascii, bynary, ...)
@@ -39,7 +39,7 @@
 #
 #
 # Managing Files from the Command Line
-- ![Quadro2, Linux File System](/images/importantfolders.png)
+- ![Quadro2, Linux File System](/images/importantfolders.png)  
 *Quadro2: Linux File System*
 - **ls**
     - list files and directories
@@ -72,7 +72,7 @@
     - -s will create a soft link
         - soft links are link a pointer to the original file, if we delete the original file the link will persist but it will point to a file that does not exist  
           
-- ![Quadro3, File Paterns](/images/filepaterns.png)
+- ![Quadro3, File Paterns](/images/filepaterns.png)  
 *Quadro3: File Paterns*
 - **~**
     - home directory
@@ -98,14 +98,14 @@
 #
 # GETTING HELP IN RED HATENTERPRISE LINUX
 - There are different MAN Pages available for consulting devided in different sections.
-- ![Quadro4, MAN Sections](/images/mansections.png)
+- ![Quadro4, MAN Sections](/images/mansections.png)  
 *Quadro4: MAN Pages sections*
 - The most important ones are 1 (user commands), 5 (configuration files) and 8 (admin commands)
 - To check the available manual section of a command use **man -k *command***
 - To check a specific section use (for example section 5) **man 5 *command***
 - To navigate the man pages use the following shortcuts:
-- ![Quadro5, MAN Navigatoin](/images/mannavigation.png)
+- ![Quadro5, MAN Navigatoin](/images/mannavigation.png)  
 *Quadro5: MAN Pages Navigation*
 - MAN pages are devide into diffent area with the following headings:
-- ![Quadro6, MAN Headings](/images/manheadings.png)
+- ![Quadro6, MAN Headings](/images/manheadings.png)  
 *Quadro6: MAN Pages Heagings*
