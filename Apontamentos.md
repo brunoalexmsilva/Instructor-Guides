@@ -127,7 +127,7 @@
     - **evince *filetoprint.ps** - opens file in preview mode  
 #
 #
-#  CREATING, VIEWING, AND EDITING TEXT FILES
+#  **Chapter 5** - CREATING, VIEWING, AND EDITING TEXT FILES
 ## REDIRECTING OUTPUT TO A FILE OR PROGRAM
 - STANDARD INPUT, STANDARD OUTPUT, AND STANDARD ERROR:
 - ![Quadro8, STDin,out,error](/images/std.png)  
@@ -170,7 +170,7 @@
             - **d** - delete
             - **u** - undo
     - **i** - Enter Insert mode  
-    ## CHANGING THE SHELL ENVIRONMENT
+## CHANGING THE SHELL ENVIRONMENT
 - Assigning Values to Variables
     -  VARIABLENAME=value
 - Retrieving Values with Variable Expansion
