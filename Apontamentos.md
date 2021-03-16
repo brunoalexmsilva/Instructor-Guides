@@ -73,6 +73,8 @@
         - soft links are link a pointer to the original file, if we delete the original file the link will persist but it will point to a file that does not exist  
 - **whereis *file***
     -  Locates the file
+- ***command* -- *-argument***
+    - Ignores -arguments as a command option and treats is as an argument
           
 - ![Quadro3, File Paterns](/images/filepaterns.png)  
 *Quadro3: File Paterns*
@@ -133,6 +135,8 @@
 - Output Redirections:
 - ![Quadro9, STDRedirections](/images/stdRedirections.png)  
 *Quadro9: Output Redirections*  
+- ***command* < *file***
+    - < can be use to replace the keyboard as the standard input
 ## CONSTRUCTING PIPELINES
 - Pipelines:
 - ![Quadro10, Pipelines](/images/pipelines.png)  
@@ -143,5 +147,37 @@
 - ![Quadro11, Tee](/images/tee.png)    
 *Quadro10: Tee*
 - ***command* | tee *command* | *command*** 
-    - Example: ls -l | tee /tmp/saved-output | less
-
+    - Example: ls -l | tee /tmp/saved-output | less  
+## EDITING TEXT FILES FROM THE SHELL PROMPT  
+- VIM Operating Modes:
+- ![Quadro11, VimModes](/images/vimmodes.png)    
+*Quadro1q: VIM Operating Modes*  
+- VIM comands:
+    - **Esc** - Enter Command Mode  
+        - **:w** - write changes  
+        - **:wq** - write changes and quit vim  
+        - **:q!** - quit vim discarding changes  
+        - **dd** - delete one line (3dd deletes 3 lines below)  
+        - **yy** - copies the line (4yy copy 4 lines below)  
+        - **p** - pastes the copied lines (5p pastes 5 times the copied lines)  
+        - **u** - undo  
+    - **v**, **V**, **CRTL+v** - Enter Visual Mode
+        - **v** - character mode (select characters)
+        - **V** - line mode (select lines)
+        - **CTRL+v** - block mode (select colunms)
+            - **y** - copy
+            - **p** - paste
+            - **d** - delete
+            - **u** - undo
+    - **i** - Enter Insert mode  
+    ## CHANGING THE SHELL ENVIRONMENT
+- Assigning Values to Variables
+    -  VARIABLENAME=value
+- Retrieving Values with Variable Expansion
+    - $VARIABLENAME
+    - Example:   
+        - [user@host ~]$ echo Repeat $COUNTx  
+        - Repeat  
+        - [user@host ~]$ echo Repeat ${COUNT}x  
+        - Repeat 40x  
+- Configuring Bash with Shell Variables
