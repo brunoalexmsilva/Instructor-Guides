@@ -1,5 +1,5 @@
 #
-# Accessing the command line
+# **Chapter 2** - Accessing the command line
 
 - **passwd**
     - change users password
@@ -38,7 +38,7 @@
 
 #
 #
-# Managing Files from the Command Line
+# **Chapter 3** - Managing Files from the Command Line
 - ![Quadro2, Linux File System](/images/importantfolders.png)  
 *Quadro2: Linux File System*
 - **ls**
@@ -71,6 +71,8 @@
         - ls -li will do the same and will let you know the inode number
     - -s will create a soft link
         - soft links are link a pointer to the original file, if we delete the original file the link will persist but it will point to a file that does not exist  
+- **whereis *file***
+    -  Locates the file
           
 - ![Quadro3, File Paterns](/images/filepaterns.png)  
 *Quadro3: File Paterns*
@@ -96,7 +98,8 @@
 
 #
 #
-# GETTING HELP IN RED HATENTERPRISE LINUX
+# **Chapter 4** - GETTING HELP IN RED HATENTERPRISE LINUX
+## READING MANUAL PAGES
 - There are different MAN Pages available for consulting devided in different sections.
 - ![Quadro4, MAN Sections](/images/mansections.png)  
 *Quadro4: MAN Pages sections*
@@ -108,4 +111,37 @@
 *Quadro5: MAN Pages Navigation*
 - MAN pages are devide into diffent area with the following headings:
 - ![Quadro6, MAN Headings](/images/manheadings.png)  
-*Quadro6: MAN Pages Heagings*
+*Quadro6: MAN Pages Heagings*  
+## READING INFO DOCUMENTATION
+- **pinfo**
+    - access to the top of the pinfo tree
+- **pinfo *command***
+    - direct access to the command pinfo page  
+- To navigate the pinfo pages use the following shortcuts:
+- ![Quadro7, PINFO Navigatoin](/images/pinfonavigation.png)  
+*Quadro7: PINFO Pages Navigation*  
+- Examples:
+    - **man -t command > *filetoprint.ps*** -t prepares de man pages for printing
+    - **evince *filetoprint.ps** - opens file in preview mode  
+#
+#
+#  CREATING, VIEWING, AND EDITING TEXT FILES
+## REDIRECTING OUTPUT TO A FILE OR PROGRAM
+- STANDARD INPUT, STANDARD OUTPUT, AND STANDARD ERROR:
+- ![Quadro8, STDin,out,error](/images/std.png)  
+*Quadro8: STANDARD INPUT, STANDARD OUTPUT, AND STANDARD ERROR* 
+- Output Redirections:
+- ![Quadro9, STDRedirections](/images/stdRedirections.png)  
+*Quadro9: Output Redirections*  
+## CONSTRUCTING PIPELINES
+- Pipelines:
+- ![Quadro10, Pipelines](/images/pipelines.png)  
+*Quadro10: Pipelines*
+- ***command* | *command*** 
+    - Example: ls | wc -l
+- Tee:
+- ![Quadro11, Tee](/images/tee.png)    
+*Quadro10: Tee*
+- ***command* | tee *command* | *command*** 
+    - Example: ls -l | tee /tmp/saved-output | less
+
