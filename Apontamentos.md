@@ -39,7 +39,7 @@
 #
 #
 # **Chapter 3** - Managing Files from the Command Line
-- ![Quadro2, Linux File System](/images/importantfolders.png)  
+![Quadro2, Linux File System](/images/importantfolders.png)    
 *Quadro2: Linux File System*
 - **ls**
     - list files and directories
@@ -76,7 +76,7 @@
 - ***command* -- *-argument***
     - Ignores -arguments as a command option and treats is as an argument
           
-- ![Quadro3, File Paterns](/images/filepaterns.png)  
+![Quadro3, File Paterns](/images/filepaterns.png)  
 *Quadro3: File Paterns*
 - **~**
     - home directory
@@ -103,16 +103,16 @@
 # **Chapter 4** - GETTING HELP IN RED HATENTERPRISE LINUX
 ## READING MANUAL PAGES
 - There are different MAN Pages available for consulting devided in different sections.
-- ![Quadro4, MAN Sections](/images/mansections.png)  
+![Quadro4, MAN Sections](/images/mansections.png)  
 *Quadro4: MAN Pages sections*
 - The most important ones are 1 (user commands), 5 (configuration files) and 8 (admin commands)
 - To check the available manual section of a command use **man -k *command***
 - To check a specific section use (for example section 5) **man 5 *command***
 - To navigate the man pages use the following shortcuts:
-- ![Quadro5, MAN Navigatoin](/images/mannavigation.png)  
+![Quadro5, MAN Navigatoin](/images/mannavigation.png)  
 *Quadro5: MAN Pages Navigation*
 - MAN pages are devide into diffent area with the following headings:
-- ![Quadro6, MAN Headings](/images/manheadings.png)  
+![Quadro6, MAN Headings](/images/manheadings.png)  
 *Quadro6: MAN Pages Heagings*  
 ## READING INFO DOCUMENTATION
 - **pinfo**
@@ -120,7 +120,7 @@
 - **pinfo *command***
     - direct access to the command pinfo page  
 - To navigate the pinfo pages use the following shortcuts:
-- ![Quadro7, PINFO Navigatoin](/images/pinfonavigation.png)  
+![Quadro7, PINFO Navigatoin](/images/pinfonavigation.png)  
 *Quadro7: PINFO Pages Navigation*  
 - Examples:
     - **man -t command > *filetoprint.ps*** -t prepares de man pages for printing
@@ -130,28 +130,28 @@
 #  **Chapter 5** - CREATING, VIEWING, AND EDITING TEXT FILES
 ## REDIRECTING OUTPUT TO A FILE OR PROGRAM
 - STANDARD INPUT, STANDARD OUTPUT, AND STANDARD ERROR:
-- ![Quadro8, STDin,out,error](/images/std.png)  
+![Quadro8, STDin,out,error](/images/std.png)  
 *Quadro8: STANDARD INPUT, STANDARD OUTPUT, AND STANDARD ERROR* 
 - Output Redirections:
-- ![Quadro9, STDRedirections](/images/stdRedirections.png)  
+![Quadro9, STDRedirections](/images/stdRedirections.png)  
 *Quadro9: Output Redirections*  
 - ***command* < *file***
     - < can be use to replace the keyboard as the standard input
 ## CONSTRUCTING PIPELINES
 - Pipelines:
-- ![Quadro10, Pipelines](/images/pipelines.png)  
+![Quadro10, Pipelines](/images/pipelines.png)  
 *Quadro10: Pipelines*
 - ***command* | *command*** 
     - Example: ls | wc -l
 - Tee:
-- ![Quadro11, Tee](/images/tee.png)    
+![Quadro11, Tee](/images/tee.png)    
 *Quadro10: Tee*
 - ***command* | tee *command* | *command*** 
     - Example: ls -l | tee /tmp/saved-output | less  
 ## EDITING TEXT FILES FROM THE SHELL PROMPT  
 - VIM Operating Modes:
-- ![Quadro11, VimModes](/images/vimmodes.png)    
-*Quadro1q: VIM Operating Modes*  
+![Quadro11, VimModes](/images/vimmodes.png)    
+*Quadro11: VIM Operating Modes*  
 - VIM comands:
     - **Esc** - Enter Command Mode  
         - **:w** - write changes  
