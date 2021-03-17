@@ -171,17 +171,16 @@
             - **u** - undo
     - **i** - Enter Insert mode  
 ## CHANGING THE SHELL ENVIRONMENT
-- Assigning Values to Variables
-    -  VARIABLENAME=value
-- Retrieving Values with Variable Expansion
-    - $VARIABLENAME
+### Assigning Values to Variables
+-  VARIABLENAME=value
+### Retrieving Values with Variable Expansion
+- $VARIABLENAME
     - Example:   
-        - [user@host ~]$ echo Repeat $COUNTx  
-        - Repeat  
-        - [user@host ~]$ echo Repeat ${COUNT}x  
-        - Repeat 40x  
-- Configuring Bash with Shell Variables
-
+    - [user@host ~]$ echo Repeat $COUNTx  
+    - Repeat  
+    - [user@host ~]$ echo Repeat ${COUNT}x  
+    - Repeat 40x  
+### Configuring Bash with Shell Variables
 - List of Envoironment Variables:  
 
 |System Variable|Meaning|To view variable value type|  
@@ -204,9 +203,31 @@ export TERM=vt100|
 |**DISPLAY**|Set X display name|echo \$DISPLAY
 export DISPLAY=:0.1|
 |**EDITOR**|Set name of default text editor.|export EDITOR=/usr/bin/vim|  
-    
+   
 - **env** - check shell variables
+    - EXAMPLES:
+        - [user@host ~]$ PS1="bash\$ "
+        - bash$ PS1="[\u@\h \W]\$ "
+        - [user@host ~]$
+### CONFIGURING PROGRAMS WITH ENVIRONMENT VARIABLES
 - **export *variableName=value*** - set shell variables  
-- EXAMPLES: 
-- export EDITOR=nano
-- export PATH=${PATH}:/home/user/sbin
+    - EXAMPLES: 
+    - export EDITOR=nano
+    - export PATH=${PATH}:/home/user/sbin
+### SETTING ENVIRONMENT VARIABLES AUTOMATICALLY
+- Edit the ~/.bashrc  
+```
+# .bashrc
+
+-# Source global definitions
+if [ -f /etc/bashrc ]; then
+. /etc/bashrc
+fi
+
+# User specific environment
+PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export PATH
+
+# User specific aliases and functions
+export EDITOR=nano
+```
